@@ -205,7 +205,7 @@ class BaseSphinx(BaseBuilder):
         project = self.project
         build_command = [
             'python',
-            self.python_env.venv_bin(filename='sphinx-build'),
+            '/venv/bin/sphinx-build',
             '-T',
         ]
         if self._force:

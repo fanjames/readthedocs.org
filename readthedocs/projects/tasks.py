@@ -655,11 +655,11 @@ class UpdateDocsTaskStep(SyncRepositoryMixin):
             else:
                 self.python_env.delete_existing_build_dir()
 
-            self.python_env.setup_base()
-            self.python_env.save_environment_json()
-            self.python_env.install_core_requirements()
-            self.python_env.install_user_requirements()
-            self.python_env.install_package()
+            # self.python_env.setup_base()
+            # self.python_env.save_environment_json()
+            # self.python_env.install_core_requirements()
+            # self.python_env.install_user_requirements()
+            # self.python_env.install_package()
 
     def build_docs(self):
         """
