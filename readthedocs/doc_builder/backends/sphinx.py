@@ -329,7 +329,7 @@ class PdfBuilder(BaseSphinx):
         # Default to this so we can return it always.
         self.run(
             'python',
-            self.python_env.venv_bin(filename='sphinx-build'),
+            '/venv/bin/sphinx-build',
             '-b',
             'latex',
             '-D',
