@@ -186,7 +186,7 @@ class BaseSphinx(BaseBuilder):
         self.clean()
         project = self.project
         build_command = [
-            'python',
+            '/venv/bin/python2.7',
             '/venv/bin/sphinx-build',
             '-T',
         ]
@@ -328,7 +328,7 @@ class PdfBuilder(BaseSphinx):
 
         # Default to this so we can return it always.
         self.run(
-            'python',
+            '/venv/bin/python2.7',
             '/venv/bin/sphinx-build',
             '-b',
             'latex',
